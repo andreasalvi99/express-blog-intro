@@ -40,6 +40,8 @@ const posts = [
   },
 ];
 
+app.use(express.static("public"));
+
 app.get("/", (req, res) => {
   res.json({
     message: "Server del mio blog",
@@ -48,6 +50,7 @@ app.get("/", (req, res) => {
 
 app.get("/bacheca", (req, res) => {
   res.json({
+    success: true,
     results: posts,
   });
 });
