@@ -41,6 +41,12 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/bacheca", (req, res) => {
+  res.json({
+    results: posts,
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server online on ${appUrl}`);
 });
