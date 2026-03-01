@@ -4,34 +4,39 @@ const port = 3000;
 const appUrl = `http://localhost:${port}`;
 const posts = [
   {
-    titolo: "Guida base al backtick",
+    titolo: "Ciambellone",
     contenuto:
-      "Il backtick è utile in Markdown e JavaScript per scrivere codice inline e template string.",
-    tags: ["markdown", "javascript", "sintassi"],
+      "Un classico dolce da forno soffice e profumato, perfetto per colazione o merenda.",
+    img: "ciambellone.jpeg",
+    tags: ["dolci", "forno", "tradizione"],
   },
   {
-    titolo: "Allenamento in definizione",
+    titolo: "Cracker alla barbabietola",
     contenuto:
-      "Per perdere grasso mantenendo massa serve deficit calorico moderato e allenamento costante.",
-    tags: ["fitness", "definizione", "nutrizione"],
+      "Cracker croccanti con barbabietola nell’impasto, ideali come snack o aperitivo.",
+    img: "cracker_barbabietola.jpeg",
+    tags: ["salato", "barbabietola", "snack"],
   },
   {
-    titolo: "Async e Await spiegati semplice",
+    titolo: "Pane fritto dolce",
     contenuto:
-      "Async e await permettono di gestire operazioni asincrone in modo più leggibile rispetto alle promise pure.",
-    tags: ["javascript", "async", "programmazione"],
+      "Fette di pane fritte e zuccherate, una ricetta semplice e golosa della tradizione casalinga.",
+    img: "pane_fritto_dolce.jpeg",
+    tags: ["dolci", "fritto", "tradizione"],
   },
   {
-    titolo: "SQL per principianti",
+    titolo: "Pasta alla barbabietola",
     contenuto:
-      "Le query SELECT permettono di recuperare dati da una tabella filtrandoli con WHERE.",
-    tags: ["database", "sql", "backend"],
+      "Pasta dal colore vivace preparata con barbabietola, dal gusto delicato e leggermente dolce.",
+    img: "pasta_barbabietola.jpeg",
+    tags: ["primo", "barbabietola", "pasta"],
   },
   {
-    titolo: "Cos'è il DOM",
+    titolo: "Torta paesana",
     contenuto:
-      "Il DOM rappresenta la struttura di una pagina HTML e permette di modificarla tramite JavaScript.",
-    tags: ["html", "javascript", "frontend"],
+      "Dolce rustico tipico della tradizione, preparato con ingredienti semplici e sapori autentici.",
+    img: "torta_paesana.jpeg",
+    tags: ["dolci", "tradizione", "rustico"],
   },
 ];
 
