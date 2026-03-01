@@ -1,7 +1,16 @@
+//^ Importo express dopo aver fatto npm i express
 const express = require("express");
+
+//^ Invoco express
 const app = express();
+
+//^ Per convenienza creo la const della porta
 const port = 3000;
+
+//^ Per convenienza creo la const dell'URL
 const appUrl = `http://localhost:${port}`;
+
+//^ Array di elementi da restituire con la chiamata get
 const posts = [
   {
     titolo: "Ciambellone",
@@ -40,14 +49,17 @@ const posts = [
   },
 ];
 
+//^ Middle ware
 app.use(express.static("public"));
 
+//^ Chiamata alla homepage ("/"), restituisce oggetto json come response
 app.get("/", (req, res) => {
   res.json({
     message: "Server del mio blog",
   });
 });
 
+//^ Chiamata alla page bacheca ("/bacheca"), restituisce oggetto json come response (contiene array)
 app.get("/bacheca", (req, res) => {
   res.json({
     results: posts,
@@ -55,6 +67,7 @@ app.get("/bacheca", (req, res) => {
   });
 });
 
+//^ Server in ascolto, si verifica con npm run watch
 app.listen(port, () => {
   console.log(`Server online on ${appUrl}`);
 });
