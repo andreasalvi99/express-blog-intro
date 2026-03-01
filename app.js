@@ -50,8 +50,8 @@ app.get("/", (req, res) => {
 
 app.get("/bacheca", (req, res) => {
   res.json({
-    success: true,
     results: posts,
+    success: true,
   });
 });
 
